@@ -173,9 +173,8 @@ export default function Home() {
       {loading && <p>Loading...</p>}
       {error && <p>{error}</p>}
       {orders.length > 0 && (
-  <div className="mt-8">
-    <h2 className="text-lg font-semibold">Orders Found:</h2>
-    <div className="grid grid-cols-2 gap-4 mt-4">
+  <div className="mt-8 flex justify-center">
+    <div className="grid grid-cols-1 gap-4">
       {orders.map((order) => (
         <div key={order.LabOrderID} className="bg-white p-4 rounded-md shadow-md">
           <h3 className="text-lg font-semibold">Order ID: {order.LabOrderID}</h3>
