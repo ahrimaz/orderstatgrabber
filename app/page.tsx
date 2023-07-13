@@ -152,22 +152,6 @@ export default function Home() {
             placeholder="Account Number"
             className="p-2 my-2 border border-gray-300"
           />
-          <div className="flex">
-            <input
-              type="text"
-              value={minOrderNum}
-              onChange={(e) => setMinOrderNum(e.target.value)}
-              placeholder="Min Order Number (e.g., Q1000000)"
-              className="p-2 my-2 border border-gray-300"
-            />
-            <input
-              type="text"
-              value={maxOrderNum}
-              onChange={(e) => setMaxOrderNum(e.target.value)}
-              placeholder="Max Order Number (e.g., Q2000000)"
-              className="p-2 my-2 border border-gray-300"
-            />
-          </div>
           <input
             type="text"
             value={singleOrderNum}
@@ -177,13 +161,6 @@ export default function Home() {
           />
         </div>
         <div className="flex justify-center mt-4">
-  <button
-    type="button"
-    className="bg-blue-500 rounded-lg px-4 py-2 text-white mr-2"
-    onClick={handleRangeSearch}
-  >
-    Search Range
-  </button>
   <button
     type="button"
     className="bg-blue-500 rounded-lg px-4 py-2 text-white"
